@@ -1,0 +1,10 @@
+{
+	"profiles": {
+		"MediaPlayerSample.Windows (Unpackaged)": {
+			"commandName": "Project"
+		},
+		"MediaPlayerSample.Windows (Package)": {
+			"commandName": "MsixPackage"
+		}
+	}
+}

@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "MediaPlayerSample",
+  "display": "standalone",
+  "name": "MediaPlayerSample",
+  "short_name": "MediaPlayerSample",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}
