@@ -3,11 +3,17 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:local="using:MediaPlayerSample"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-  <StackPanel
-        HorizontalAlignment="Center"
-        VerticalAlignment="Center">
-    <TextBlock AutomationProperties.AutomationId="HelloTextBlock"
-          Text="Hello Uno Platform"
-          HorizontalAlignment="Center" />
-  </StackPanel>
+  
+    <StackPanel HorizontalAlignment="Center"
+                VerticalAlignment="Stretch"
+                Background="Aquamarine">
+      <TextBlock AutomationProperties.AutomationId="HelloTextBlock"
+                 Text="Media Player without size constraint"
+                 HorizontalAlignment="Center"
+                 Margin="0,30,0,0"/>
+      <!-- iOS need size constraint to show up ex: Height="200" -->
+      <MediaPlayerElement Source="{x:Bind VideoSource}"
+                          AutoPlay="True">
+      </MediaPlayerElement>
+    </StackPanel>
 </Page>
